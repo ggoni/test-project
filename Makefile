@@ -36,6 +36,7 @@ format:
 	
 lint:
 	$(FLAKE8) ./*.py
+	
 # Install Jupyter kernel
 install-kernel: install
 	@echo "Installing Jupyter kernel..."
