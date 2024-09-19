@@ -31,8 +31,14 @@ install: venv
 	@echo "Dependencies and tools installed successfully."
 
 # Format code using Black if Python files exist
-format:
+format-scripts:
 	$(BLACK) ./*.py
+
+# Format Jupyter notebooks using Black
+format-notebooks:
+	$(BLACK) ./*.ipynb
+
+format: format-scripts format-notebooks
 	
 lint:
 	$(FLAKE8) ./*.py
