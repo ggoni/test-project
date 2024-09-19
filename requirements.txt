@@ -5,6 +5,7 @@ ipykernel
 ipywidgets
 jedi
 jupyter
+jupyter-black
 jupyterlab
 matplotlib
 nbconvert
